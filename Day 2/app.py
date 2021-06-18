@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:root@localhost/sample"
 db = SQLAlchemy(app)
 
-
+#creating a table called USERS in our Sample DB
 class Users(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(200), nullable=False)
@@ -14,10 +14,6 @@ class Users(db.Model):
 
 
 
-
-# @app.route('/')
-# def sample():
-#     return render_template("signup.html")
 
 @app.route("/login")
 def login_hey():
