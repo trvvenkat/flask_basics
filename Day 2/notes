@@ -1,0 +1,10 @@
+understanding databases WRT python:
+databases - (databases(sample(db)), tables(db.Model), columns)
+python - (databases, Models(tables, class), columns (variables))
+
+
+HTTP - Sessions:
+get - to get the data
+post - post
+put - update
+delete - to delete
