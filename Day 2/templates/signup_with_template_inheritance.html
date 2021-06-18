@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<title>signin</title>
+
+{% endblock %}
+
+
+{% block body %}
+
+<form action="/signup", method="POST">
+  <label for="name">Name</label><br>
+  <input type="text" id="name" name="name" placeholder="Enter your name here"><br>
+  <label for="email">e-Mail</label><br>
+  <input type="email" id="email" name="email" placeholder="Enter your e-Mail here"><br>
+  <input type="submit" name="" value="signup">
+</form>
+
+
+{% endblock %}
