@@ -1,0 +1,65 @@
+installing VirtualENV:
+python -m pip install virtualenv
+
+
+
+creating an environment:
+mkdir <project name>
+cd <project name>
+python -m venv <name of environment> - windows
+python -m virtualenv <name of the env> - ubuntu
+
+
+
+(to confirm - dir <name of the environment>) - windows
+(to confirm - ls) - ubuntu
+
+
+
+
+activating the environment:
+<name of environment>\Scripts\activate - windows (or)
+<name of environment>\Scripts\activate.bat - windows
+source env/bin/activate - ubuntu
+
+
+
+now install flask inside the virtualenv:
+pip install flask
+(basic modules that will be used in max all flask apps: flask, flask-sqlalchemy, requests, mysql-connector, pymysql, marshmallow, urllib3)
+
+
+
+create a sample python code: 
+
+from flask import Flask
+app = Flask(__name__)
+@app.route('/')
+def hello_world():
+    return 'Hello world!'
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+
+
+save and run
+
+
+{
+NOTE: to use flask run it is better to specify the flask app
+
+export FLASK_APP=hello.py or export FLASK_APP=<directory>
+
+if using windows pc
+set FLASK_APP=hello.py or set FLASK_APP=<directory>
+
+
+}
+
+
+flask run (or)
+python <python file>.py
+
+
