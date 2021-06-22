@@ -1,0 +1,7 @@
+flask_app
+	app - dir
+		__init__.py ----- (native file for the given folder) has config
+		models.py - models(db - tables)
+		routes.py (some routes)
+		views (some routes)
+	run.py - to run our flask app
